@@ -36,6 +36,17 @@ button {
     font: inherit;
 }
 
+/* TRANSICIÓN ENTRE PÁGINAS */
+
+@view-transition {
+    navigation: auto;
+}
+
+::view-transition-group(nav-indicator) {
+    animation-duration: 0.45s;
+    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
 /* ESTRUCTURA */
 
 .layout {
@@ -114,6 +125,10 @@ nav a.activo {
 nav a:hover::before,
 nav a.activo::before {
     width: 42px;
+}
+
+nav a.activo::before {
+    view-transition-name: nav-indicator;
 }
 
 .cambiar-tema {
