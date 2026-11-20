@@ -1,132 +1,138 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <title>Lucas Pérez</title>
-    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Home — Lucas Pérez, Future Engineer and Photographer.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Home | Lucas Pérez</title>
 </head>
-<main>
-    <header>
-        <div class="nombre">
-            <a href="index.html">Lucas Pérez</a>
-            <p>Future Engineer and Photographer</p>
-        </div>
+<body>
+    <main class="layout">
+        <header class="sidebar">
+            <div class="nombre">
+                <a href="index.html">Lucas Pérez</a>
+                <p>Future Engineer and Photographer</p>
+            </div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tech.html">Tech</a></li>
-                <li><a href="photo.html">Photo</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html" class="activo" aria-current="page">Home</a></li>
+<li><a href="tech.html">Tech</a></li>
+<li><a href="photo.html">Photo</a></li>
+<li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
 
-    <section class="trabajos">
+            <button class="cambiar-tema" id="cambiar-tema" type="button">Cambiar a modo noche</button>
+            <p class="sidebar-pie">Portfolio personal · 2026</p>
+        </header>
 
-        <article>
-            <p class="fecha">10 ENERO 2027</p>
-
-            <div class="proyecto">
-                <div>
-                    <h2>Creación Smart Mirror con Raspberry PI</h2>
-                    <p>Proyecto de creación de un Smart Mirror usando Raspberry PI5, con funcionalidades con comando por voz, activación por detección de movimiento, hora y meteorologia precisa, etc...</p>
-                    
+        <section class="contenido">
+            
+            <section class="intro">
+                <p class="sobrelinea">PORTFOLIO PERSONAL · 2026</p>
+                <h1>Un poco de tecnología, fotografía y cosas que voy haciendo.</h1>
+                <p class="intro-texto">Soy Lucas. Aquí voy guardando proyectos, ideas y trabajos que me apetece enseñar. Sin mucho más.</p>
+                <div class="intro-enlaces">
+                    <a href="tech.html">Ver proyectos tech <span>↗</span></a>
+                    <a href="photo.html">Ver fotografías <span>↗</span></a>
                 </div>
+            </section>
 
-                <img src="img/SMARTMIRROR.jpg">
-            </div>
-
-            <p class="categoria">PROGRAMACIÓN Y ELECTRÓNICA</p>
-
-            <div class="tecnologias">
-                <span>LINUX</span>
-                <span>RASPBERRY PI</span>
-                <span>PYTHON</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JAVA SCRIPT</span>
-            </div>
-        </article>
-
-        <!-- ELITECRAFT -->
-        <article>
-            <p class="fecha">20 NOV 2026</p>
-
-            <div class="proyecto">
+            <div class="seccion-titulo">
                 <div>
-                    <h2>Página fan-made de EliteCraft 4</h2>
-                    <p>Desarrollo de una página web de la serie EliteCraft 4, con retransmisiones en directo, actualizaciones por APIs e integración con Vercel.</p>
-                    <a href="https://elitecraft-4-info.vercel.app/" class="verProyecto">Ver proyecto →</a>
+                    <p class="sobrelinea">ALGUNOS TRABAJOS</p>
+                    <h2>Proyectos recientes</h2>
                 </div>
-
-                <img src="img/ELITE4.png" alt="Proyecto EliteCraft 4">
+                <a href="tech.html">Ver todos <span>→</span></a>
             </div>
 
-            <p class="categoria">PROGRAMACIÓN</p>
+            <section class="trabajos" aria-label="Proyectos recientes">
+                <article class="trabajo">
+    <p class="fecha">10 ENERO 2027 <span>· PROGRAMACIÓN Y ELECTRÓNICA</span></p>
+    <div class="proyecto">
+      <div class="proyecto-texto">
+        <h2>Smart Mirror con Raspberry Pi</h2>
+        <p>Un espejo inteligente hecho con Raspberry Pi 5. La idea es reunir en un mismo sitio información útil, control por voz y detección de movimiento.</p>
+        <a href="proyectos/smart-mirror.html" class="verProyecto">Ver proyecto <span aria-hidden="true">→</span></a>
+      </div>
+      <a class="imagen-proyecto" href="proyectos/smart-mirror.html" aria-label="Abrir Smart Mirror con Raspberry Pi">
+        <img src="img/SMARTMIRROR.jpg" alt="Proyecto Smart Mirror" loading="lazy">
+      </a>
+    </div>
+    <div class="tecnologias">
+      <span>Linux</span>
+      <span>Raspberry Pi</span>
+      <span>Python</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+    </div>
+  </article>
+<article class="trabajo">
+    <p class="fecha">20 NOV 2026 <span>· PROGRAMACIÓN</span></p>
+    <div class="proyecto">
+      <div class="proyecto-texto">
+        <h2>Página fan-made de EliteCraft 4</h2>
+        <p>Una página web sobre la serie EliteCraft 4, con retransmisiones en directo, actualizaciones mediante APIs e integración con Vercel.</p>
+        <a href="proyectos/elitecraft.html" class="verProyecto">Ver proyecto <span aria-hidden="true">→</span></a>
+      </div>
+      <a class="imagen-proyecto" href="proyectos/elitecraft.html" aria-label="Abrir Página fan-made de EliteCraft 4">
+        <img src="img/ELITE4.png" alt="Página de información de EliteCraft 4" loading="lazy">
+      </a>
+    </div>
+    <div class="tecnologias">
+      <span>JavaScript</span>
+      <span>HTML</span>
+      <span>CSS</span>
+    </div>
+  </article>
+<article class="trabajo">
+    <p class="fecha">15 NOV 2026 <span>· FOTOGRAFÍA</span></p>
+    <div class="proyecto">
+      <div class="proyecto-texto">
+        <h2>Fotos en la Fundición</h2>
+        <p>Fotografías de un concierto en La Fundición de la cantante emergente SaraLaFuente.</p>
+        <a href="proyectos/fundicion.html" class="verProyecto">Ver proyecto <span aria-hidden="true">→</span></a>
+      </div>
+      <a class="imagen-proyecto" href="proyectos/fundicion.html" aria-label="Abrir Fotos en la Fundición">
+        <img src="img/FUNDICIÓN.jpg" alt="Fotografía de una actuación en La Fundición" loading="lazy">
+      </a>
+    </div>
+    <div class="tecnologias">
+      <span>Canon EOS R6 Mark II</span>
+      <span>Adobe Lightroom</span>
+    </div>
+  </article>
+<article class="trabajo">
+    <p class="fecha">15 NOV 2026 <span>· VIDEOJUEGOS</span></p>
+    <div class="proyecto">
+      <div class="proyecto-texto">
+        <h2>Desarrollo de videojuegos</h2>
+        <p>Juegos y pequeños proyectos hechos en Unity, incluyendo trabajos personales y experiencias de Game Jam.</p>
+        <a href="proyectos/videojuegos.html" class="verProyecto">Ver proyecto <span aria-hidden="true">→</span></a>
+      </div>
+      <a class="imagen-proyecto" href="proyectos/videojuegos.html" aria-label="Abrir Desarrollo de videojuegos">
+        <img src="img/ITCHIO.png" alt="Proyectos de videojuegos publicados en itch.io" loading="lazy">
+      </a>
+    </div>
+    <div class="tecnologias">
+      <span>C#</span>
+      <span>Unity</span>
+    </div>
+  </article>
+            </section>
 
-            <div class="tecnologias">
-                <span>JavaScript</span>
-                <span>HTML</span>
-                <span>CSS</span>
-            </div>
-        </article>
 
-        <!-- FOTOGRAFÍA -->
-        <article>
-            <p class="fecha">15 NOV 2026</p>
-
-            <div class="proyecto">
-                <div>
-                    <h2>Fotos en la Fundición</h2>
-                    <p>Sesión de fotos de un concierto de la Fundición a la cantante emergente SaraLaFuente.</p>
-                    <a href="https://www.instagram.com/luuchy.perzz?gwpx=MXUzaHEyYnJnMDgyYg%3D%3D&utm_source=qr" class="verProyecto">Ver proyecto →</a>
-                </div>
-
-                <img src="img/FUNDICIÓN.jpg" alt="Fotografía en la Fundición">
-            </div>
-
-            <p class="categoria">FOTOGRAFÍA</p>
-
-            <div class="tecnologias">
-                <span>Canon EOS R6 Mark II</span>
-                <span>Adobe Lightroom</span>
-            </div>
-        </article>
-
-        <!-- VIDEOJUEGOS -->
-        <article>
-            <p class="fecha">15 NOV 2026</p>
-
-            <div class="proyecto">
-                <div>
-                    <h2>Desarrollo de videojuegos</h2>
-                    <p>Trayectoria en desarrollo de videojuegos, con juegos sólidos y proyectos de Game Jam.</p>
-                    <a href="https://luuchyperzz.itch.io/" class="verProyecto">Ver proyecto →</a>
-                </div>
-
-                <img src="img/ITCHIO.png" alt="Desarrollo de videojuegos">
-            </div>
-
-            <p class="categoria">PROGRAMACIÓN</p>
-
-            <div class="tecnologias">
-                <span>C#</span>
-                <span>Unity</span>
-            </div>
-        </article>
-
-
-
-    </section>
-</main>
-
-<footer>
-    <h1 id="reloj">00:00:00</h1>
-</footer>
+            <footer class="pie">
+                <span>Hecho poco a poco.</span>
+                <span class="hora"><span>Hora local</span> <strong id="reloj">00:00:00</strong></span>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>
