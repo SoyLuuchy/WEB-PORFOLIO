@@ -1,0 +1,179 @@
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: white;
+    color: black;
+    margin: 0;
+    transition: background 1s, color 1s;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+/* NAVEGACIÓN */
+
+header {
+    position: fixed;
+    width: 30%;
+    height: 100%;
+    padding-top: 130px;
+    box-sizing: border-box;
+}
+
+.nombre {
+    margin-bottom: 35px;
+}
+
+.nombre a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.nombre p {
+    font-style: italic;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 12px;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: inherit;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+nav a::before {
+    content: "";
+    width: 35px;
+    height: 6px;
+    background: currentColor;
+    transition: width 0.3s;
+}
+
+nav a:hover::before {
+    width: 70px;
+}
+
+/* ARTÍCULOS */
+
+.trabajos {
+    grid-column: 2;
+    padding: 80px 60px;
+}
+
+article {
+    padding: 25px;
+    margin-bottom: 35px;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+article:hover {
+    transform: translateY(-4px);
+}
+
+.fecha {
+    font-size: 12px;
+    opacity: 0.6;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.proyecto {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    align-items: center;
+    gap: 35px;
+}
+
+.proyecto h2 {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0 0 10px;
+    background: linear-gradient(currentColor, currentColor) left bottom / 0% 1px no-repeat;
+    transition: background-size 0.5s;
+}
+
+.proyecto h2:hover {
+    background-size: 100% 1px;
+}
+
+.proyecto p {
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.proyecto a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 3px;
+    transition: opacity 0.3s;
+    transition: font-size 0.3s;
+}
+
+.proyecto a:hover {
+    opacity: 0.5;
+    font-size:20px
+
+}
+
+.proyecto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+/* CATEGORÍAS */
+
+.categoria {
+    font-size: 12px;
+    margin-top: 25px;
+    opacity: 0.6;
+    letter-spacing: 1px;
+}
+
+.tecnologias {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.tecnologias span {
+    padding: 5px 12px;
+    font-size: 11px;
+    border: 1px solid currentColor;
+    border-radius: 2px;
+    transition: background 0.3s, color 0.3s;
+    transition: color;
+}
+
+
+
+/* RELOJ */
+
+footer {
+    text-align: center;
+}
+
+#reloj {
+    font-size: 24px;
+}
