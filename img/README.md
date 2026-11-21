@@ -1,12 +1,7 @@
-# Imágenes del portfolio
+# Fotos de las sesiones
 
-Las tarjetas y las fichas de proyecto comparten estas portadas de 1200 × 720 píxeles.
+Cada sesión tiene su carpeta dentro de `img/sesiones/`. La de La Fundición es `img/sesiones/fundicion/`.
 
-| Proyecto | Archivo |
-| --- | --- |
-| Smart Mirror | `smart-mirror.webp` |
-| EliteCraft 4 | `elitecraft.webp` |
-| Concierto en La Fundición | `fundicion.webp` |
-| Videojuegos | `videojuegos.webp` |
+Exporta las fotos en JPEG y nómbralas `01.jpg`, `02.jpg`, `03.jpg` y así sucesivamente, sin saltarte números. La primera sirve también de portada. La galería lee las siguientes al abrir la página y muestra las flechas a partir de la segunda. Puedes mezclar verticales y horizontales.
 
-Para cambiar una ilustración por una foto o captura, sustituye el WebP y actualiza su texto alternativo en Home, en Tech o Photo y en la ficha de `proyectos/`. El pie de imagen de la ficha también es editable.
+Para crear otra sesión, crea su propia carpeta y apunta la primera imagen del carrusel a su `01.jpg`.

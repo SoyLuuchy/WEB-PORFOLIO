@@ -6,7 +6,9 @@
     <meta name="color-scheme" content="light dark" />
     <meta name="description" content="Fotos en la Fundición — Lucas Pérez, Future Engineer and Photographer." />
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../detalles.css" />
     <script src="../script.js" defer></script>
+    <script src="../galeria.js" defer></script>
     <title>Fotos en la Fundición | Lucas Pérez</title>
   </head>
   <body>
@@ -24,6 +26,15 @@
             <li><a href="../photo.html" class="activo" aria-current="location">Photo</a></li>
             <li><a href="../about.html">About</a></li>
           </ul>
+          <details class="menu-proyectos">
+            <summary>Proyectos</summary>
+            <div>
+              <a href="../proyectos/smart-mirror.html">Smart Mirror</a>
+              <a href="../proyectos/elitecraft.html">EliteCraft 4</a>
+              <a href="../proyectos/fundicion.html">La Fundición</a>
+              <a href="../proyectos/videojuegos.html">Videojuegos</a>
+            </div>
+          </details>
         </nav>
 
         <button class="cambiar-tema" id="tema" type="button" hidden>Cambiar a modo noche</button>
@@ -46,11 +57,13 @@
             </p>
           </div>
 
-          <img
-            class="detalle-portada"
-            src="../img/fundicion.webp"
-            alt="Cartel ilustrado de SaraLaFuente en La Fundición."
-          />
+          <section class="galeria" aria-label="Fotografías de La Fundición">
+            <div class="fotos" tabindex="0" aria-label="Fotos de la sesión. Usa las flechas para recorrerlas.">
+              <img src="../img/sesiones/fundicion/01.jpg" alt="SaraLaFuente cantando bajo los focos azules de La Fundición." />
+            </div>
+            <button class="anterior" type="button" aria-label="Fotografía anterior" hidden>←</button>
+            <button class="siguiente" type="button" aria-label="Fotografía siguiente" hidden>→</button>
+          </section>
 
           <div class="detalle-columnas">
             <div class="detalle-secciones">
@@ -59,7 +72,7 @@
                 <div>
                   <h2>Fotos a la cantante SaraLaFuente</h2>
                   <p>
-                    Me llevé la cámara al concierto de SaraLaFuente en La Fundición. Después de ser contactado por ella, me pidió que le hiciera unas fotos durante el evento. Fue una gran experiencia y me encanto poder captar la energía de la cantante.
+                    Me llevé la cámara al concierto de SaraLaFuente en La Fundición. Después de ser contactado por ella, me pidió que le hiciera unas fotos durante el evento. Fue una gran experiencia y me encantó poder captar la energía de la cantante.
                   </p>
                 </div>
               </section>
@@ -67,7 +80,7 @@
                 <span class="detalle-numero"></span>
                 <div>
                   <h2>Cámara y edición</h2>
-                  <p>Hice las fotos con la Canon EOS R6 Mark II y trabajé la selección en Lightroom, como siempre. No hubo ningun problema ni con la edición ni con la entrega final. Las fotos a mi parecer quedaron bastante bien</p>
+                  <p>Hice las fotos con la Canon EOS R6 Mark II y trabajé la selección en Lightroom, como siempre. No hubo ningún problema ni con la edición ni con la entrega final. A mi parecer, las fotos quedaron bastante bien.</p>
                 </div>
               </section>
 
@@ -76,7 +89,7 @@
                 <div>
                   <h2>Enlace</h2>
                   <a
-                    class="verProyecto"
+                    class="enlace verProyecto"
                     href="https://www.instagram.com/luuchy.perzz/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -88,26 +101,21 @@
               </section>
             </div>
 
-            <aside class="detalle-lateral">
-              <div>
-                <p class="sobrelinea">CATEGORÍA</p>
-                <p>FOTOGRAFÍA</p>
-              </div>
-              <div>
-                <p class="sobrelinea">FECHA</p>
-                <p>15 NOV 2026</p>
-              </div>
-              <div>
-                <p class="sobrelinea">HERRAMIENTAS</p>
-                <div class="tecnologias">
-                  <span>Canon EOS R6 Mark II</span>
-                  <span>Adobe Lightroom</span>
-                </div>
-              </div>
+            <aside>
+              <table class="ficha-sesion">
+                <caption>Ficha de la sesión</caption>
+                <tbody>
+                  <tr><th scope="row">Artista</th><td>SaraLaFuente</td></tr>
+                  <tr><th scope="row">Sala</th><td>La Fundición</td></tr>
+                  <tr><th scope="row">Fecha</th><td>15 nov 2026</td></tr>
+                  <tr><th scope="row">Cámara</th><td>Canon EOS R6 Mark II</td></tr>
+                  <tr><th scope="row">Edición</th><td>Adobe Lightroom</td></tr>
+                </tbody>
+              </table>
             </aside>
           </div>
 
-          <a class="volver" href="../photo.html">← Volver a Photo</a>
+          <a class="enlace volver" href="../photo.html">← Volver a Photo</a>
         </section>
 
         <footer class="pie">
