@@ -1,91 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="About — Lucas Pérez, Future Engineer and Photographer.">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="About — Lucas Pérez, Future Engineer and Photographer." />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>About | Lucas Pérez</title>
-</head>
-<body>
-    <main class="layout">
-        <header class="sidebar">
-            <div class="nombre">
-                <a href="index.html">Lucas Pérez</a>
-                <p>Future Engineer and Photographer</p>
-            </div>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="sidebar">
+        <div class="nombre">
+          <a href="index.html">Lucas Pérez</a>
+          <p>Future Engineer and Photographer</p>
+        </div>
 
-            <nav aria-label="Navegación principal">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-<li><a href="tech.html">Tech</a></li>
-<li><a href="photo.html">Photo</a></li>
-<li><a href="about.html" class="activo" aria-current="page">About</a></li>
-                </ul>
-            </nav>
+        <nav aria-label="Navegación principal">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tech.html">Tech</a></li>
+            <li><a href="photo.html">Photo</a></li>
+            <li><a href="about.html" class="activo" aria-current="page">About</a></li>
+          </ul>
+        </nav>
 
-            <button class="cambiar-tema" id="cambiar-tema" type="button">Cambiar a modo noche</button>
-            <p class="sidebar-pie">Portfolio personal · 2026</p>
-        </header>
+        <button class="cambiar-tema" id="tema" type="button" hidden>Cambiar a modo noche</button>
+        <p class="sidebar-pie">Portfolio personal · 2026</p>
+      </header>
 
-        <section class="contenido">
-            
-            <section class="intro intro-corta">
-                <p class="sobrelinea">03 / SOBRE MÍ</p>
-                <h1>About</h1>
-                <p class="intro-texto">Future Engineer and Photographer.</p>
-            </section>
-
-            <section class="about-contenido">
-                <div class="about-texto">
-                    <p class="sobrelinea">HOLA, SOY</p>
-                    <h2>Lucas Pérez.</h2>
-                    <p>Me interesa crear cosas, tanto delante de una pantalla como fuera de ella. En este portfolio se juntan proyectos de programación, electrónica, videojuegos y fotografía.</p>
-                    <p>La idea de esta página es ir enseñando lo que hago, cómo lo voy construyendo y las cosas que voy aprendiendo por el camino. Esta parte seguirá creciendo.</p>
-                </div>
-
-                <aside class="about-lateral">
-                    <div class="about-bloque">
-                        <p class="sobrelinea">AHORA MISMO</p>
-                        <p>Aprendiendo, probando ideas y trabajando en nuevos proyectos.</p>
-                    </div>
-                    <div class="about-bloque">
-                        <p class="sobrelinea">ME MUEVO ENTRE</p>
-                        <div class="tecnologias">
-                            <span>Programación</span>
-                            <span>Electrónica</span>
-                            <span>Videojuegos</span>
-                            <span>Fotografía</span>
-                        </div>
-                    </div>
-                    <div class="about-bloque">
-                        <p class="sobrelinea">HERRAMIENTAS</p>
-                        <div class="tecnologias">
-                            <span>Python</span>
-                            <span>JavaScript</span>
-                            <span>HTML / CSS</span>
-                            <span>C#</span>
-                            <span>Unity</span>
-                            <span>Lightroom</span>
-                        </div>
-                    </div>
-                    <div class="about-bloque">
-                        <p class="sobrelinea">CONTACTO</p>
-                        <p>Próximamente añadiré aquí mis datos de contacto y otros enlaces.</p>
-                        <a class="verProyecto" href="https://www.instagram.com/luuchy.perzz/" target="_blank" rel="noopener noreferrer">Instagram <span>↗</span></a>
-                    </div>
-                </aside>
-            </section>
-
-
-            <footer class="pie">
-                <span>Hecho poco a poco.</span>
-                <span class="hora"><span>Hora local</span> <strong id="reloj">00:00:00</strong></span>
-            </footer>
+      <main class="contenido" id="contenido">
+        <section class="intro intro-corta">
+          <p class="sobrelinea">03 / SOBRE MÍ</p>
+          <h1>About</h1>
         </section>
-    </main>
-</body>
+
+        <section class="about-contenido">
+          <div class="about-texto">
+            <p class="sobrelinea">HOLA, SOY</p>
+            <h2>Lucas Pérez.</h2>
+            <p>
+              Me interesa crear cosas, tanto delante de una pantalla como fuera de ella. En este portfolio se
+              juntan proyectos de programación, electrónica, videojuegos y fotografía.
+            </p>
+            <p>
+              La idea de esta página es ir enseñando lo que hago, cómo lo voy construyendo y las cosas que voy
+              aprendiendo por el camino. Esta parte seguirá creciendo.
+            </p>
+          </div>
+
+          <aside class="about-lateral">
+            <div class="about-bloque">
+              <p class="sobrelinea">AHORA MISMO</p>
+              <p>Aprendiendo, probando ideas y trabajando en nuevos proyectos.</p>
+            </div>
+            <div class="about-bloque">
+              <p class="sobrelinea">ME MUEVO ENTRE</p>
+              <div class="tecnologias">
+                <span>Programación</span>
+                <span>Electrónica</span>
+                <span>Videojuegos</span>
+                <span>Fotografía</span>
+              </div>
+            </div>
+            <div class="about-bloque">
+              <p class="sobrelinea">HERRAMIENTAS</p>
+              <div class="tecnologias">
+                <span>Python</span>
+                <span>JavaScript</span>
+                <span>HTML / CSS</span>
+                <span>C#</span>
+                <span>Unity</span>
+                <span>Lightroom</span>
+              </div>
+            </div>
+            <div class="about-bloque">
+              <p class="sobrelinea">CONTACTO</p>
+              <p>Próximamente añadiré aquí mis datos de contacto y otros enlaces.</p>
+              <a class="verProyecto" href="https://www.instagram.com/luuchy.perzz/" target="_blank">Instagram <span>↗</span></a>
+              <br>
+              <a class="verProyecto" href="https://github.com/SoyLuuchy" target="_blank">GitHub <span>↗</span></a>
+              <br>
+              <a class="verProyecto" href="https://x.com/luuchyperzz" target="_blank">X <span>↗</span></a>
+            </div>
+          </aside>
+        </section>
+
+        <footer class="pie">
+          <span class="hora" hidden>
+            <span>Hora local</span>
+            <strong id="reloj"></strong>
+          </span>
+        </footer>
+      </main>
+    </div>
+  </body>
 </html>

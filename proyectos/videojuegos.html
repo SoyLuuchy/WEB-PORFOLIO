@@ -1,107 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="Desarrollo de videojuegos — Lucas Pérez, Future Engineer and Photographer.">
-    <link rel="stylesheet" href="../style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="Desarrollo de videojuegos — Lucas Pérez, Future Engineer and Photographer."
+    />
+    <link rel="stylesheet" href="../style.css" />
     <script src="../script.js" defer></script>
     <title>Desarrollo de videojuegos | Lucas Pérez</title>
-</head>
-<body>
-    <main class="layout">
-        <header class="sidebar">
-            <div class="nombre">
-                <a href="../index.html">Lucas Pérez</a>
-                <p>Future Engineer and Photographer</p>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="sidebar">
+        <div class="nombre">
+          <a href="../index.html">Lucas Pérez</a>
+          <p>Future Engineer and Photographer</p>
+        </div>
+
+        <nav aria-label="Navegación principal">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../tech.html" class="activo" aria-current="location">Tech</a></li>
+            <li><a href="../photo.html">Photo</a></li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+
+        <button class="cambiar-tema" id="tema" type="button" hidden>Cambiar a modo noche</button>
+        <p class="sidebar-pie">Portfolio personal · 2026</p>
+      </header>
+
+      <main class="contenido" id="contenido">
+        <div class="migas">
+          <a href="../tech.html">Tech</a>
+          <span>/</span>
+          <span>Desarrollo de videojuegos</span>
+        </div>
+
+        <section class="detalle">
+          <div class="detalle-cabecera">
+            <p class="sobrelinea">03 / VIDEOJUEGOS · 2021-2024</p>
+            <h1>Desarrollo de videojuegos</h1>
+            <p class="detalle-intro">
+              Juegos y proyectos pequeños desarrollados con Unity, incluyendo trabajos personales y Game Jams.
+            </p>
+          </div>
+
+          <img class="detalle-portada" src="../img/videojuegos2.png"/>
+
+          <div class="detalle-columnas">
+            <div class="detalle-secciones">
+              <section class="detalle-bloque">
+                <span class="detalle-numero"></span>
+                <div>
+                  <h2>Juegos en Unity</h2>
+                  <p>
+                    He desarrollado varios videojuegos(antes de la llegada de la IA) usando Unity y C#, incluyendo juegos de plataformas, puzzles, arcade, terror, etc... Algunos como MaskMan Infinity llegaron a durante un tiempo
+                    ser lanzados en Google Play Store. Estos proyectos me hiceron pensar de una forma diferente y aprendí mucho sobre como pensar y realizar un proyecto, con o sin tiempo.
+                  </p>
+                </div>
+              </section>
+              <section class="detalle-bloque">
+                <span class="detalle-numero"></span>
+                <div>
+                  <h2>Dónde jugarlos</h2>
+                  <p>
+                    Los juegos publicados están en mi perfil de itch.io. Cada uno tiene allí su propia página. Todos estan para Windows, algunos para Android.
+                  </p>
+                </div>
+              </section>
+
+              <section class="detalle-bloque detalle-enlace">
+                <span class="detalle-numero">↗</span>
+                <div>
+                  <h2>Enlace</h2>
+                  <a
+                    class="verProyecto"
+                    href="https://luuchyperzz.itch.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Ver juegos en itch.io
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </section>
             </div>
 
-            <nav aria-label="Navegación principal">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-<li><a href="../tech.html" class="activo" aria-current="page">Tech</a></li>
-<li><a href="../photo.html">Photo</a></li>
-<li><a href="../about.html">About</a></li>
-                </ul>
-            </nav>
-
-            <button class="cambiar-tema" id="cambiar-tema" type="button">Cambiar a modo noche</button>
-            <p class="sidebar-pie">Portfolio personal · 2026</p>
-        </header>
-
-        <section class="contenido">
-            
-            <div class="migas">
-                <a href="../tech.html">Tech</a>
-                <span>/</span>
-                <span>Desarrollo de videojuegos</span>
-            </div>
-
-            <section class="detalle">
-                <div class="detalle-cabecera">
-                    <p class="sobrelinea">03 / VIDEOJUEGOS · 15 NOV 2026</p>
-                    <h1>Desarrollo de videojuegos</h1>
-                    <p class="detalle-intro">Juegos y proyectos pequeños desarrollados con Unity, incluyendo trabajos personales y Game Jams.</p>
+            <aside class="detalle-lateral">
+              <div>
+                <p class="sobrelinea">CATEGORÍA</p>
+                <p>VIDEOJUEGOS</p>
+              </div>
+              <div>
+                <p class="sobrelinea">FECHA</p>
+                <p>2021-2024</p>
+              </div>
+              <div>
+                <p class="sobrelinea">HERRAMIENTAS</p>
+                <div class="tecnologias">
+                  <span>C#</span>
+                  <span>Unity</span>
                 </div>
+              </div>
+            </aside>
+          </div>
 
-                <img class="detalle-portada" src="../img/ITCHIO.png" alt="Colección de videojuegos en itch.io">
-
-                <div class="detalle-columnas">
-                    <div class="detalle-secciones">
-                        <section class="detalle-bloque">
-                            <span class="detalle-numero">01</span>
-                            <div>
-                                <h2>Sobre el proyecto</h2>
-                                <p>Una recopilación de mi trayectoria haciendo videojuegos con Unity y C#. Aquí iré dejando información de cada juego, su proceso de desarrollo y las cosas que vaya aprendiendo en el camino.</p>
-                            </div>
-                        </section>
-                        <section class="detalle-bloque">
-                            <span class="detalle-numero">02</span>
-                            <div>
-                                <h2>Proceso</h2>
-                                <p>Esta parte está pendiente. Aquí iré contando cómo surgió la idea, las decisiones que fui tomando y los problemas que aparecieron durante el proceso.</p>
-                            </div>
-                        </section>
-                        <section class="detalle-bloque">
-                            <span class="detalle-numero">03</span>
-                            <div>
-                                <h2>Imágenes y detalles</h2>
-                                <p>Aquí iré añadiendo capturas, fotografías y otros detalles del proyecto cuando tenga todo el material preparado.</p>
-                            </div>
-                        </section>
-                        <section class="detalle-bloque detalle-enlace"><span class="detalle-numero">↗</span><div><h2>Enlace</h2><a class="verProyecto" href="https://luuchyperzz.itch.io/" target="_blank" rel="noopener noreferrer">Ver juegos en itch.io <span aria-hidden="true">↗</span></a></div></section>
-                    </div>
-
-                    <aside class="detalle-lateral">
-                        <div>
-                            <p class="sobrelinea">CATEGORÍA</p>
-                            <p>VIDEOJUEGOS</p>
-                        </div>
-                        <div>
-                            <p class="sobrelinea">FECHA</p>
-                            <p>15 NOV 2026</p>
-                        </div>
-                        <div>
-                            <p class="sobrelinea">HERRAMIENTAS</p>
-                            <div class="tecnologias">
-                                <span>C#</span>
-                                <span>Unity</span>
-                            </div>
-                        </div>
-                    </aside>
-                </div>
-
-                <a class="volver" href="../tech.html">← Volver a Tech</a>
-            </section>
-
-
-            <footer class="pie">
-                <span>Hecho poco a poco.</span>
-                <span class="hora"><span>Hora local</span> <strong id="reloj">00:00:00</strong></span>
-            </footer>
+          <a class="volver" href="../tech.html">← Volver a Tech</a>
         </section>
-    </main>
-</body>
+
+        <footer class="pie">
+          <span class="hora" hidden>
+            <span>Hora local</span>
+            <strong id="reloj"></strong>
+          </span>
+        </footer>
+      </main>
+    </div>
+  </body>
 </html>

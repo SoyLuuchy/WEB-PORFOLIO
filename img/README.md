@@ -1,12 +1,12 @@
 # Imágenes del portfolio
 
-Deja aquí las imágenes que se usan en las tarjetas y en las páginas de cada proyecto.
+Las tarjetas y las fichas de proyecto comparten estas portadas de 1200 × 720 píxeles.
 
-Nombres que ya están referenciados en el código:
+| Proyecto | Archivo |
+| --- | --- |
+| Smart Mirror | `smart-mirror.webp` |
+| EliteCraft 4 | `elitecraft.webp` |
+| Concierto en La Fundición | `fundicion.webp` |
+| Videojuegos | `videojuegos.webp` |
 
-- SMARTMIRROR.jpg
-- ELITE4.png
-- FUNDICIÓN.jpg
-- ITCHIO.png
-
-Los nombres distinguen mayúsculas, minúsculas y acentos. Mantén estos nombres o cambia las rutas correspondientes en los archivos HTML.
+Para cambiar una ilustración por una foto o captura, sustituye el WebP y actualiza su texto alternativo en Home, en Tech o Photo y en la ficha de `proyectos/`. El pie de imagen de la ficha también es editable.
